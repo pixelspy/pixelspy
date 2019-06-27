@@ -1,0 +1,77 @@
+/*   survol rideau simple    */
+.picture > div{
+  width: 20rem;
+  height: 20rem;
+  background: url(../img/image.JPG) no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.picture{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.picture::after{
+  /* toujours mettre content vide pour les éléments after et before */
+  content: '';
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  top: 100%; /* permets au nouvel element after detre en dessous de l'element picture*/
+  transition: all 0.5s;
+  pointer-events: none; /*permets au survol de rester sur l'element en dessous*/
+}
+
+.picture:hover::after{ /* à l'hover de picture, on veut que lelement after change*/
+  top: 0;
+  transition-timing-function: cubic-bezier(.61,1.69,.73,.62);
+}
+
+/*position finale des pseudo elements */
+.picture > div::before{ /*ligne horizontale*/
+  z-index: 1;
+  content: '';
+  width: 36%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  border-radius: 4px;
+  transform: translate3d(-50%, -50%, 0) rotate(90deg);
+
+rotate(90deg);
+  transition: all 0.5s
+}
+.picture > div:hover::before{ /*ligne horizontale*/
+  left:50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition: all 0.5s 0.2s;
+}
+
+.picture > div::after{ /*ligne verticale*/
+  z-index: 1;
+  content: '';
+  width: 4px;
+  height: 36%;
+  border-radius: 4px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0) rotate(90deg);
+  transition: all 0.5s;
+}
+
+.picture > div:hover::after{ /*ligne verticale*/
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition: all 0.5s  0.2s;
+}
