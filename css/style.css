@@ -5,4 +5,31 @@
 .container {
     height: 100vh;
     overflow: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titles{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.bigTitle{
+  font-size: 120px;
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+
+.smallTitle{
+  font-size: 24px;
+}
+
+.smallTitle2{
+  font-size: 24px;
+  font-weight: lighter;
 }
