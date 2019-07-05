@@ -6,17 +6,18 @@
     height: 100vh;
     overflow: auto;
     position: relative;
-    text-align: center;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    text-align: left;
 }
 
 .titles{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
-  top: 50%;
-  left: 40%;
+  top: 400px;
+  left: 400px;
   transform: translate(-50%, -50%);
   text-align: left;
+  z-index: 2;
 }
 
 .bigTitle{
@@ -32,4 +33,18 @@
 .smallTitle2{
   font-size: 24px;
   font-weight: lighter;
+}
+
+.contact{
+  position: absolute;
+  text-align: left;
+  margin: 3px 0 0;
+  padding: 0 40px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 2;
+  top: 600px;
+  font-size:15px;
+  text-decoration: underline;
+  cursor: pointer;
 }
