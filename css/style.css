@@ -9,8 +9,12 @@
     text-align: left;
 }
 
+h1, h2, h3{
+  color: rgba(255, 255, 255, 0.7);
+
+}
+
 .titles{
-  color: white;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   top: 400px;
@@ -40,7 +44,6 @@
   text-align: left;
   margin: 3px 0 0;
   padding: 0 40px;
-  color: white;
   font-family: 'Montserrat', sans-serif;
   z-index: 2;
   top: 600px;
@@ -54,7 +57,6 @@
   text-align: left;
   margin: 3px 0 0;
   padding: 0 40px;
-  color: white;
   font-family: 'Montserrat', sans-serif;
   z-index: 2;
   top: 20px;
@@ -66,11 +68,29 @@
   text-align: left;
   margin: 5px 0 0;
   padding: 0 40px;
-  color: white;
   font-family: 'Montserrat', sans-serif;
   z-index: 2;
   top: 20px;
   right: 20px;
   font-size:10px;
+  font-weight: lighter;
+}
+
+#arrow{
+  width: 15px;
+}
+
+.legend{
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+
+  position: absolute;
+  margin: 5px 5px 0;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Montserrat', sans-serif;
+  z-index: 2;
+  top: 120px;
+  right: 20px;
+  font-size: 10px;
   font-weight: lighter;
 }
