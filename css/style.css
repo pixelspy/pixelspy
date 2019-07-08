@@ -9,8 +9,13 @@
     text-align: left;
 }
 
-h1, h2, h3{
+h1, h2, h3 a{
   color: rgba(255, 255, 255, 0.7);
+}
+
+a{
+/* text-decoration: none; */
+color: white;
 }
 
 .italic{
