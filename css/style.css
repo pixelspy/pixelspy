@@ -2,6 +2,10 @@
    margin: 0;
    padding: 0;
 }
+
+body{
+  font-size: 14px;
+}
 .container {
     height: 100vh;
     overflow: auto;
@@ -25,7 +29,7 @@ color: white;
 .titles{
   font-family: 'Montserrat', sans-serif;
   position: absolute;
-  top: 400px;
+  top: 60%;
   left: 400px;
   transform: translate(-50%, -50%);
   text-align: left;
@@ -105,4 +109,17 @@ color: white;
   right: 20px;
   font-size: 10px;
   font-weight: lighter;
+}
+
+
+
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+  .smallTitle, .smallTitle2, a {
+    font-size: 24px;
+  }
+  .titles{
+    /* width: 80%; */
+    top: 30%;
+
+  }
 }
