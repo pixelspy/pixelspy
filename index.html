@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta http-equiv="Content-Security-Policy"
+      content="
+      connect-src 'self' .viviscim.com;
+      font-src 'self';
+      media-src 'self';
+      style-src 'self' 'unsafe-inline';
+      script-src 'self' 'unsafe-eval' https://www.google-analytics.com/analytics.js
+      https://www.google.com/recaptcha/api.js
+      https://www.gstatic.com/recaptcha/api2/v1552285980763/recaptcha__fr.js;">
     <meta charset="utf-8">
-    <title></title>
+    <title>Viviscim: la Visite Virtuelle Scénographique Immersive</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logoViviscimfavicon.png" />
+    <meta name="description" property="og:description"
+    content="Ouvrez au monde entier les décors de vos spectacles en 360° et en Réalité Virtuelle">
   </head>
+<!-- width='100%' height='100%' -->
   <body>
     <div class="logo">
       <img width="50px" src="img/logoViviscimWhite.png" alt="logo viviscim">
     </div>
     <div class="">
       <h2 class="vr">Réalité Virtuelle disponible - <span class="italic">WebVRMode</span> </h2>
-        <!-- <img id="arrow" src="/Users/mahana/Creative Cloud Files/UXUI TOOLKIT/arrowWhite.png" alt=""> -->
     </div>
     <div class="titles">
       <h1 class="bigTitle">Viviscim</h1>
       <div class="containerLogo">
         <h2 class="smallTitle logoBjorn"> by collectif bjorn</h2>
-        <a class="plus"   target="_blank" href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A167e1a81-888d-4049-bdfa-bc3b5284ef09">En savoir plus</a>
+        <a class="plus" target="_blank" href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Afa194833-432f-4f2a-93bf-4b6c313cdd04">En savoir plus</a>
       </div>
 
       <h2 class="smallTitle">La Visite Virtuelle Scénographique Immersive</h2>
@@ -27,12 +38,15 @@
 
       <h2 class="smallTitle italic">The Immersive Scenographic Virtual Tour</h2>
       <h2 class="smallTitle italic">Present to the world the set designs of your shows in 360° and Virtual Reality</h2>
-      <a href="mailto:collectifbjorn@gmail.com"><h2 class="contact">contactez-nous</h2></a>
+      <div class="containerLogo justify">
+        <a target="_blank" href="https://fr.surveymonkey.com/r/9RVV89M"><h2 class="form btn">Participez à l'aventure UX !</h2></a>
+        <a href="mailto:collectifbjorn@gmail.com"><h2 class="contact btn">Contactez-nous</h2></a>
+      </div>
     </div>
-    <a target="_blank" href="https://fr.surveymonkey.com/r/9RVV89M"><h2 class="form">Participez à l'aventure UX !</h2></a>
     <h3 class="legend">Opéra Orchestre National Montpellier | Don pasquale, Donizetti | Valentin Schwarz - Andrea Cozzi, 2019</h3>
     <div class="container">
-      <iframe width='100%' height='100%' src='https://roundme.com/embed/oUdVbrSFTuKhK891PTWi' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe width='100%' height='100%' class="iframe"  src='https://roundme.com/embed/iptqKYUqucjDsxdX9gBi' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <!-- <iframe width='100%' height='100%' class="iframe" src='https://roundme.com/embed/3RUSgi6IWfthWhowBoA7' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
     </div>
   </body>
 </html>
